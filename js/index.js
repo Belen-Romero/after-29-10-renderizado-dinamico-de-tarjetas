@@ -1,25 +1,25 @@
 //⚠️Detalle: la ruta de las imagenes las pongo como si el html las buscara
 const arrayProductos = [
   {
-    nombre: "Producto A",
+    nombre: "Bundin para un mate 🧉",
     img: "./img/budin.jpg",
     precio: 1000,
     descripcion: "descripcion 1",
   },
   {
-    nombre: "Producto B",
+    nombre: "Pancito casero 🍞",
     img: "./img/pan.jpg",
     precio: 2000,
     descripcion: "descripcion 2",
   },
   {
-    nombre: "Producto C",
+    nombre: "Panquequitos 🥞",
     img: "./img/pancake.jpg",
     precio: 3000,
     descripcion: "descripcion 3",
   },
   {
-    nombre: "Producto D",
+    nombre: "Croissant crocantito 🥐",
     img: "./img/croissant.jpg",
     precio: 4000,
     descripcion: "descripcion 4",
@@ -46,6 +46,7 @@ arrayProductos.forEach((producto) => {
   //Creo el titulo
   let tituloProducto = document.createElement("h2");
   tituloProducto.classList.add("titulo-producto");
+  tituloProducto.textContent = producto.nombre;
 
   //Creo el precio
   let precioProducto = document.createElement("p");
